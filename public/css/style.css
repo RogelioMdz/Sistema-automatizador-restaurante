@@ -1,0 +1,502 @@
+:root {
+    --colorSecundario: rgb(71, 189, 184);
+    --colorNavbar: rgb(42, 55, 70);
+    --colorError: rgb(246, 0, 21);
+    --colorTitulos: rgb(124, 127, 130);
+    --colorDisponible: rgb(0, 215, 20);
+    --colorOcupado: rgb(187, 107, 4);
+    --colorCobro: rgb(211, 25, 196);
+    --colorSobremesa: rgb(191, 196, 17);
+}
+
+/* pantalla de carga de login */
+.loader {
+    width: 20em;
+    align-items: center;
+}
+
+/* fondo login */
+#bodylogin {
+    background-image: url('../img/fondo4.jpg');
+    background-repeat: no-repeat;
+}
+
+/* Estilos de la pagina Not Found 404 error/index */
+.bodynotfound {
+    background: var(--colorNavbar);
+}
+
+.notfoundtitulo {
+    text-align: center;
+    margin: 200px 0 20px 0;
+    color: darkorange;
+    font-family: monospace;
+}
+
+.notfoundlink {
+    text-align: center;
+    color: orange;
+    font-family: monospace;
+
+}
+
+.notfounddiv {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.notfoundenlace {
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+}
+
+.notfoundenlace:hover {
+    color: white;
+}
+
+.notfoundboton {
+    background: darkorange;
+}
+
+/* Desde aqui comienza estilos de la hoja de trabajo header.php */
+/* Fondo y largo de navbar */
+.navbar {
+    background: rgb(42, 55, 70) !important;
+    /* height: 100px; */
+}
+
+/* Nombre del usuario logeado */
+.navbar .optlog {
+    color: white !important;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.navbar .optlog .circulo {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #5cb85c;
+    display: inline-block;
+    margin: auto;
+}
+
+.navbar .dropdown-menu {
+    left: 3em;
+}
+
+/* Cambio de letra al navbar */
+.navbar .navbar-brand,
+.navbar .navbar-nav {
+    font-family: "Garamond", serif;
+    font-weight: lighter;
+
+}
+
+/* Posicion de titulo */
+.navbar .navbar-brand {
+    margin: 5px 70px;
+}
+
+/* Al momento de pasar el puntero sobre el titulo se mantiene de color blanco */
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+/* fondo del collapse */
+
+/* Separacion de los items */
+.navbar .navbar-nav .nav-item {
+    padding: 10px;
+}
+
+/* Se dibuja underline en los links del navbar */
+.navbar .navbar-nav .nav-item .nav-link {
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(71, 189, 184);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(71, 189, 184);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+
+/* marquee */
+.navbar .marquesina {
+    color: white;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+/* Formulario de inicio de sesion views/login */
+.formLogin {
+    background: #2a3742;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    width: 100%;
+    padding: 25px 40px;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgb(0 0 0 / 30%);
+}
+
+.formLogin .form-title,
+.form-parrafo,
+a {
+    color: white;
+}
+
+.formLogin a:hover {
+    color: #47BDB8;
+}
+
+.formLogin .formOption {
+    position: relative;
+    --color: #ffffff;
+}
+
+.formLogin .form-control {
+    background: none;
+    color: white;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--color);
+}
+
+/* Estilo del boton */
+.formLogin .btn {
+    width: 120px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: 3px solid var(--colorSecundario);
+    position: relative;
+    z-index: 1;
+}
+
+.formLogin .btn {
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.formLogin .btn::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: var(--colorSecundario);
+    color: var(--colorNavbar);
+}
+
+.formLogin .btn:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* color de los placeholder */
+.formLogin .form-control:focus::-webkit-input-placeholder {
+    color: var(--colorSecundario);
+}
+
+.formLogin h6 {
+    text-align: center;
+    margin: 100px 0 100px 0;
+    color: #ffffff;
+}
+
+.formLogin img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilo del reloj en la pagina main/index */
+.wrap {
+    color: white;
+    width: 90%;
+    margin: 2em;
+}
+
+.widget {
+    width: 100%;
+    margin: 2em;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    /* margin-bottom: 0.3125rem; */
+    /* background: rgb(0, 0, 0, .5); */
+    /* padding: 10px; */
+    width: 100%;
+}
+
+.reloj {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    /* padding: 10px; */
+    font-size: 3em;
+    text-align: center;
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 0.3em;
+    display: block;
+}
+
+span.error {
+    color: red;
+    font-size: 1em;
+    font-family: monospace;
+}
+
+/* Dashboard */
+/* Opciones principales en el inicio del dashboard/index */
+.card-principal {
+    margin-top: 2em;
+}
+
+.card-principal .card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-principal .card-text {
+    text-align: justify;
+}
+
+.btnDash {
+    border: black 1px solid;
+    padding: 0.5em;
+    font-size: 1em;
+    font-family: monospace;
+    border-radius: 10px;
+    width: 10em;
+    color: white;
+}
+
+.btnDash:hover {
+    color: white;
+}
+
+.btnBuscar {
+    background-image: linear-gradient(to left, #00B7DA, #2c2aa2);
+}
+
+.btnBuscar .enlaceMesa {
+    text-decoration: none;
+}
+
+.btnBuscar .enlaceMesa:hover {
+    color: white;
+}
+
+.btnNOrden {
+    background-image: linear-gradient(to left, #257c4f, #00d064);
+}
+
+.btnNOrden .enlaceMesa {
+    text-decoration: none;
+}
+
+.btnNOrden .enlaceMesa:hover {
+    color: white;
+}
+
+.btnNIncidencia {
+    background-image: linear-gradient(to left, #ce0505, #832121);
+}
+
+.btnLinea {
+    background-image: linear-gradient(to left, #888888, #525252);
+}
+
+/* Estilos de la paginas de dashboard/mesa  */
+.imgOpciones {
+    margin: 3em 0 3em 0;
+}
+
+.MesaImgInicio {
+    background: var(--colorNavbar);
+    border-radius: 10em;
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+
+.MesaImgPedidoLinea {
+    background: var(--colorNavbar);
+    border-radius: 10em;
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+
+.MesaImgPedido {
+    background: var(--colorNavbar);
+    border-radius: 10em;
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+
+.coloresMesa {
+    margin: 3em 0 3em 0;
+}
+
+.coloresMesa h6 {
+    padding: 1em;
+    font-size: 0.9em;
+    font-family: monospace;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mesaDisponible {
+    background: var(--colorDisponible);
+    border-radius: 2em;
+}
+
+.mesaOcupada {
+    background: var(--colorOcupado);
+    border-radius: 2em;
+}
+
+.mesaCobro {
+    background: var(--colorCobro);
+    border-radius: 2em;
+}
+
+.mesaSobre {
+    background: var(--colorSobremesa);
+    border-radius: 2em;
+}
+
+.table-mesas {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.table-mesas .table-estadoAC {
+    font-size: 0.7em;
+    /* border: black 1px solid; */
+    width: 8em;
+    margin: auto;
+}
+
+.btnEditarMesa {
+    border-radius: 5px;
+    font-size: 1.3em;
+    background: deepskyblue;
+}
+
+.formModalMesas .form-control {
+    text-align: center;
+    font-family: monospace;
+}
+
+/* Aqui comienza la edicion de la pagina dashboard/nuevaorden */
+.lb_nuevaorden {
+    text-transform: uppercase;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+.mesaSelect {
+    margin: 1.5em;
+    border: var(--colorNavbar) 1px solid;
+}
+
+.mesaSelect option {
+    background: var(--colorNavbar);
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}
+
+.fondo-menu {
+    width: 10rem;
+    background: var(--colorNavbar);
+    padding: 0.5em;
+    width: 160px;
+    height: 165px;
+    margin-bottom: 1em;
+}
+.card-img-top{
+    width: 144px;
+    height: 115px;
+}
+.cuerpo-menu a{
+    text-decoration: none;
+    color: white;
+}
+.titulo-menu {
+    text-align: center;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1em;
+    color: white;
+    margin: auto;
+}

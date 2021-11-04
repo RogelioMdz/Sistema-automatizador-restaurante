@@ -1,0 +1,30 @@
+[03-Nov-2021 23:40:10 UTC] PHP Parse error:  syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$' in /Applications/MAMP/htdocs/Proyecto/controllers/dashboard.php on line 42
+[03-Nov-2021 23:40:12 UTC] PHP Parse error:  syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$' in /Applications/MAMP/htdocs/Proyecto/controllers/dashboard.php on line 42
+[03-Nov-2021 23:40:14 UTC] PHP Parse error:  syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$' in /Applications/MAMP/htdocs/Proyecto/controllers/dashboard.php on line 42
+[04-Nov-2021 00:13:37 UTC] PHP Notice:  Undefined variable: menu_name in /Applications/MAMP/htdocs/Proyecto/controllers/Dashboard.php on line 44
+[04-Nov-2021 00:13:43 UTC] PHP Notice:  Undefined variable: menu_name in /Applications/MAMP/htdocs/Proyecto/controllers/Dashboard.php on line 44
+[04-Nov-2021 00:14:39 UTC] PHP Notice:  Undefined variable: menu_name in /Applications/MAMP/htdocs/Proyecto/controllers/Dashboard.php on line 44
+[04-Nov-2021 00:15:08 UTC] PHP Notice:  Undefined variable: menu_name in /Applications/MAMP/htdocs/Proyecto/controllers/Dashboard.php on line 44
+[04-Nov-2021 00:15:37 UTC] PHP Notice:  Undefined variable: menu_name in /Applications/MAMP/htdocs/Proyecto/controllers/Dashboard.php on line 44
+[04-Nov-2021 00:27:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Dashboard::getMenuComple() in /Applications/MAMP/htdocs/Proyecto/libs/app.php:41
+Stack trace:
+#0 /Applications/MAMP/htdocs/Proyecto/index.php(20): App->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/Proyecto/libs/app.php on line 41
+[04-Nov-2021 01:03:15 UTC] PHP Notice:  Undefined index: manuc_img in /Applications/MAMP/htdocs/Proyecto/models/Dashboardmodel.php on line 81
+[04-Nov-2021 01:05:51 UTC] PHP Notice:  Undefined index: manuc_img in /Applications/MAMP/htdocs/Proyecto/models/Dashboardmodel.php on line 81
+[04-Nov-2021 01:06:42 UTC] PHP Notice:  Undefined index: manuc_img in /Applications/MAMP/htdocs/Proyecto/models/Dashboardmodel.php on line 81
+[04-Nov-2021 01:06:42 UTC] PHP Notice:  Undefined index: manuc_img in /Applications/MAMP/htdocs/Proyecto/models/Dashboardmodel.php on line 81
+[04-Nov-2021 01:26:07 UTC] PHP Notice:  Undefined variable: item in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:26:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:26:31 UTC] PHP Notice:  Undefined variable: item in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:26:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:26:58 UTC] PHP Notice:  Undefined variable: item in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:26:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:27:02 UTC] PHP Notice:  Undefined variable: item in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:27:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:27:06 UTC] PHP Notice:  Undefined variable: item in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:27:06 UTC] PHP Notice:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/Proyecto/models/dashboardmodel.php on line 80
+[04-Nov-2021 01:34:36 UTC] PHP Notice:  Undefined property: View::$menu in /Applications/MAMP/htdocs/Proyecto/views/dashboard/nuevaorden.php on line 162
+[04-Nov-2021 01:34:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/Proyecto/views/dashboard/nuevaorden.php on line 162
+[04-Nov-2021 01:36:55 UTC] PHP Notice:  Undefined index: manuc_img in /Applications/MAMP/htdocs/Proyecto/models/Dashboardmodel.php on line 81
