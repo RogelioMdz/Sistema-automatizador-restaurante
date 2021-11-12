@@ -5,7 +5,7 @@ class MainModel extends Model{
         parent::__construct();
     }
     public function existEmployee($datos){
-        $query = $this->db->connect()->prepare("SELECT * FROM employee WHERE employee_id = :employee_id");
+        $query = $this->db->connect()->prepare("SELECT * FROM tbl_employee WHERE employee_id = :employee_id");
         try {
             $query->execute(['employee_id'=> $datos['employee_id']]);
             if ($row = $query->fetchColumn() > 0) {
@@ -18,7 +18,7 @@ class MainModel extends Model{
         }
     }
     public function keyEmployee($datos){
-        $query = $this->db->connect()->prepare("SELECT employee_key FROM employee WHERE employee_id = :employee_id");
+        $query = $this->db->connect()->prepare("SELECT employee_key FROM tbl_employee WHERE employee_id = :employee_id");
         try {
             $query->execute(['employee_id'=> $datos['employee_id']]);
             $row = $query->fetchColumn();
@@ -34,7 +34,7 @@ class MainModel extends Model{
         }
     }
     public function getName($datos){
-        $query = $this->db->connect()->prepare("SELECT * FROM employee WHERE employee_id = :employee_id");
+        $query = $this->db->connect()->prepare("SELECT * FROM tbl_employee WHERE employee_id = :employee_id");
         try {
             $query->execute(['employee_id'=> $datos['employee_id']]);
             while($row = $query->fetch(PDO::FETCH_ASSOC)){
@@ -46,7 +46,7 @@ class MainModel extends Model{
         }
     }
     public function getSurname($datos){
-        $query = $this->db->connect()->prepare("SELECT * FROM employee WHERE employee_id = :employee_id");
+        $query = $this->db->connect()->prepare("SELECT * FROM tbl_employee WHERE employee_id = :employee_id");
         try {
             $query->execute(['employee_id'=> $datos['employee_id']]);
             while($row = $query->fetch(PDO::FETCH_ASSOC)){
@@ -58,7 +58,7 @@ class MainModel extends Model{
         }
     }
     public function getRol($rol){
-        $query = $this->db->connect()->prepare("SELECT * FROM employee WHERE employee_id = :employee_id");
+        $query = $this->db->connect()->prepare("SELECT * FROM tbl_employee WHERE employee_id = :employee_id");
         try {
             $query->execute(['employee_id'=> $rol['employee_id']]);
             while($row = $query->fetch(PDO::FETCH_ASSOC)){

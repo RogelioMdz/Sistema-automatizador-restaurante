@@ -10,7 +10,7 @@ define('DASH', 'http://localhost:8888/Sistema-automatizador-restaurante/dashboar
 define('HOST', 'localhost');
 define('DB', 'restaurante');
 define('USER', 'root');
-define('PASSWORD', 'root');
+define('PASSWORD', '');
 define  ('CHARSET', 'utf8mb4');
 
 ?>

@@ -28,3 +28,12 @@ Stack trace:
 [04-Nov-2021 01:34:36 UTC] PHP Notice:  Undefined property: View::$menu in /Applications/MAMP/htdocs/Proyecto/views/dashboard/nuevaorden.php on line 162
 [04-Nov-2021 01:34:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Applications/MAMP/htdocs/Proyecto/views/dashboard/nuevaorden.php on line 162
 [04-Nov-2021 01:36:55 UTC] PHP Notice:  Undefined index: manuc_img in /Applications/MAMP/htdocs/Proyecto/models/Dashboardmodel.php on line 81
+[12-Nov-2021 02:37:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'restaurante.employee' doesn't exist in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/models/Mainmodel.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/models/Mainmodel.php(8): PDO->prepare('SELECT * FROM e...')
+#1 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/controllers/Main.php(19): MainModel->existEmployee(Array)
+#2 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/libs/app.php(41): Main->accessEmployee()
+#3 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/index.php(20): App->__construct()
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/models/Mainmodel.php on line 8
+[12-Nov-2021 02:57:12 UTC] EXIST::employee-> El empledo aun no existe 201816441
