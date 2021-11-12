@@ -4,6 +4,19 @@ class MainModel extends Model{
     public function __construct(){
         parent::__construct();
     }
+    public function correctServer($datos){
+        $query = $this->db->connect()->prepare("SELECT  *  FROM  tbl_employee INNER JOIN tbl_rol ON tbl_employee.rol_id = tbl_rol.rol_id  WHERE employee_id = :employee_id");
+        try {
+            $query->execute(['employee_id'=> $datos['employee_id']]);
+            if ($row = $query->fetchColumn() > 0) {
+                return true;
+            }else{
+                return false;
+            }
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
     public function existEmployee($datos){
         $query = $this->db->connect()->prepare("SELECT * FROM tbl_employee WHERE employee_id = :employee_id");
         try {

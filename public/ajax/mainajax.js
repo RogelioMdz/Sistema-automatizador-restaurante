@@ -30,6 +30,17 @@ $(document).ready(function () {
                                 var validar = data.split("|");
                                 if (validar[0] == 0) {
                                     window.location.href = "index.php?url=dashboard";
+                                }else if (validar [0] == 1 ) {
+                                    Swal.fire({
+                                        icon: "error",
+                                        title: "Rayos!",
+                                        text: "Error en el servidor, contacta con soporte",
+                                        confirmButtonText: 'Continuar',
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            window.location.href = "index.php?url=main";
+                                        }
+                                    });
                                 }else if (validar [0] == 2 ) {
                                     Swal.fire({
                                         icon: "error",

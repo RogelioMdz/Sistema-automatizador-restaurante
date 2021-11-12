@@ -29,7 +29,7 @@
 
 <body id="bodylogin">
     <div id="box" class="box">
-
+        <img class="imgLogin" src="<?php echo constant('URL'); ?>public/img/login.jpeg" alt="restaurante">
         <form action="POST" id="formLogin" class="formLogin">
             <div id="items" class="mb-3 formOption text-center">
                 <div id="wrap" class="wrap">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="form-title">Welcome !</h2>
+                <h2 class="form-title">Bienvenido </h2>
             </div>
             <div id="items" class="mb-3  formOption">
                 <input required type="text" class="form-control" name="employee_id" id="employee_id"
@@ -71,7 +71,7 @@
                 <!-- se muestran los requisitos de la contraseÃ±a -->
             </div>
             <div id="items" class="mb-3  formOption text-center formLinks">
-            <a href="#" class="olvidePass"><p>Olvide contraseña</p></a>    
+            <a href="#" class="olvidePass"><p>¿Olvidaste la Contraseña?</p></a>    
             <button name="validar" class="btn btn-center btnLogueo" type="submit" data-bs-dismiss="modal">Ingresar</button>
             </div>
         </form>
