@@ -46,7 +46,8 @@ $(document).ready(function () {
                                     Swal.fire({
                                         icon: "error",
                                         title: "Rayos!",
-                                        text: "No nos fue posible encontrar tu registro, comunicale a su supervisor",
+                                        text: "No nos fue posible encontrar tu registro",
+					footer: 'Error E00x0621',
                                         confirmButtonText: 'Continuar',
                                     }).then((result) => {
                                         if (result.isConfirmed) {
