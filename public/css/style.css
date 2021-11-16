@@ -23,7 +23,7 @@
 /* --------------------------------------------------------- */
 /* fondo login */
 #bodylogin {
-    background-image: url('../img/fondologin.png');
+    background-image: url('../img/fondobueno.jpeg');
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -330,6 +330,13 @@
 }
 
 /* Media queries del login */
+@media only screen and (max-width: 1600px){
+    .box{
+        margin-top: 8em;
+        margin-right: -4.5em;
+        margin-left: 12em;
+    }
+}
 @media only screen and (max-width: 1440px){
     .box{
         margin-top: 14em;
@@ -339,7 +346,7 @@
 }
 @media only screen and (max-width: 1280px){
     .box{
-        margin-top: 14em;
+        margin-top: 7em;
         margin-right: 1.5em;
         margin-left: 6.5em;
     }

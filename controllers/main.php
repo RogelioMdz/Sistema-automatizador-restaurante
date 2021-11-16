@@ -16,8 +16,8 @@ class Main extends Controller{
         $employee_id = $_POST['employee_id'];
         $employee_key = $_POST['employee_key'];
 
-        if ($this->model->correctServer(['employee_id'=> $employee_id])) {
-            if ($this->model->existEmployee(['employee_id' => $employee_id])) {
+        if ($this->model->existTable()) {
+            if ($this->model->existEmployee(['employee_id'=> $employee_id])) {
                 if ($this->model->keyEmployee(['employee_id' => $employee_id])) {
                     session_start();
                     $_SESSION['sesion'] = $employee_id;
@@ -30,13 +30,13 @@ class Main extends Controller{
                     echo "3";
                     error_log('ACCESSDENIELD::employee-> La contraseña es incorrecta del empleado' . " " . $employee_id);
                 }
-            }else {
+            }else{
                 echo "2";
-                error_log('EXIST::employee-> El empledo aun no existe' . " " . $employee_id);
+                error_log("FATAL::server->La base de datos presenta una falla");
             }
         }else{
             echo "1";
-            error_log("FATAL::server->La base de datos presenta una falla");
+            error_log("FATAL::server->La tabla no existe");
         }
     }
 

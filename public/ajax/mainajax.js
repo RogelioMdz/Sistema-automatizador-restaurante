@@ -34,7 +34,8 @@ $(document).ready(function () {
                                     Swal.fire({
                                         icon: "error",
                                         title: "Rayos!",
-                                        text: "Error en el servidor, contacta con soporte",
+                                        text: "Persiste un error interno, contacta con soporte",
+                                        footer: 'Error E00x2464',
                                         confirmButtonText: 'Continuar',
                                     }).then((result) => {
                                         if (result.isConfirmed) {
@@ -45,7 +46,7 @@ $(document).ready(function () {
                                     Swal.fire({
                                         icon: "error",
                                         title: "Rayos!",
-                                        text: "Tu supervisor aun no te registra en nuestro sistema, recuerdale",
+                                        text: "No nos fue posible encontrar tu registro, comunicale a su supervisor",
                                         confirmButtonText: 'Continuar',
                                     }).then((result) => {
                                         if (result.isConfirmed) {
