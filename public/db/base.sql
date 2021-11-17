@@ -6,6 +6,11 @@ CREATE TABLE tbl_rol(
     rol_name VARCHAR (50),
     PRIMARY KEY (rol_id)
 );
+CREATE TABLE tbl_employeeStatus(
+    status_id INT AUTO_INCREMENT,
+    status_name VARCHAR (50),
+    PRIMARY KEY (status_id)
+);
 
 CREATE TABLE tbl_employee(
     employee_id INT AUTO_INCREMENT,
@@ -16,9 +21,11 @@ CREATE TABLE tbl_employee(
     employee_age VARCHAR (50),
     employee_gender VARCHAR (50),
     employee_job VARCHAR(50),
+    status_id INT,
     rol_id INT,
     PRIMARY KEY (employee_id),
-    FOREIGN KEY (rol_id) REFERENCES tbl_rol(rol_id)
+    FOREIGN KEY (rol_id) REFERENCES tbl_rol(rol_id),
+    FOREIGN KEY(status_id) REFERENCES tbl_employeeStatus(status_id)
 );
 
 CREATE TABLE tbl_estatus(
@@ -59,6 +66,8 @@ INSERT INTO `tbl_rol` (`rol_id`, `rol_name`) VALUES
 (NULL, 'Admin'), 
 (NULL, 'Gerente'),
 (NULL, 'Mesero');
+
+INSERT INTO `tbl_employeestatus` (`status_id`, `status_name`) VALUES (NULL, 'Activo'), (NULL, 'Inactivo'), (NULL, 'Bloqueado');
 
 INSERT INTO `tbl_employee` (`employee_id`, `employee_key`, `employee_name`, `employee_surname`, `employee_phone`, `employee_age`, `employee_gender`, `employee_job`, `rol_id`) VALUES 
 (NULL, '1', 'Rogelio', 'Navarrete', '5614341249', '21', 'Masculino', 'Administrador', '1'),

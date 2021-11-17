@@ -19,15 +19,15 @@
 
 <body>
   <div class="container"></div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <nav class="navbar  navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">The DataStones</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="<?php echo constant('DASH'); ?>">The DataStones</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="<?php echo constant('DASH'); ?>">Inicio</a>
           </li>
@@ -37,7 +37,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
               aria-expanded="false">Menu</a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
               <li><a class="dropdown-item" href="#">Tomar Orden</a></li>
               <li><a class="dropdown-item" href="#">Ordenes Activas</a></li>
             </ul>
@@ -50,14 +50,14 @@
           </li>
         </ul>
       </div>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle optlog" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               <p class="circulo"></p> Hola, <?php echo $_SESSION['name_user'] . " " . $_SESSION['surname_user'];?>
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdown">
               <?php if ($_SESSION['rol_id'] == "1" || $_SESSION['rol_id'] == "2"):?>
               <li><a class="dropdown-item" href="#">Inventario</a></li>
               <li><a class="dropdown-item" href="#">Lista de Asistencia</a></li>

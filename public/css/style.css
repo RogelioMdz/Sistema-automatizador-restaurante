@@ -74,6 +74,25 @@
 /* * navbar */
 .navbar{
     background: transparent !important;
+    padding: 1.5em;
+    transition: 0.4s;
+}
+
+/* *Estilos de los items del navbar */
+.navbar .navbar-nav .nav-link{
+    color: black;    
+}
+/* *Estilo del scroll */
+.scrollActive{
+    background-color: var(--colorSecundario) !important;
+} 
+/* * color de los links cuando scoll esta activo */
+.scrollActive .navbar-nav .nav-link, .scrollActive .navbar-brand{
+    color: white;
+}
+/* *Cambio de color de los links cuando esta activo el scroll */
+.scrollActive .navbar-nav .nav-link:hover{
+    color: black !important;
 }
 
 /* * Narvbar Brand */
@@ -86,6 +105,10 @@
 /* *Espacio entre los items de la barra */
 .navbar-nav .nav-item{
     margin-right: 0.7em;
+}
+/* *Efecto hover al pasar por los links */
+.navbar .navbar-nav  .nav-link:hover {
+    color: rgb(151, 151, 151);
 }
 
 

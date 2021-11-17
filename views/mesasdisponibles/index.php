@@ -161,7 +161,7 @@
         <!-- jqueryValidate -->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
-    <script src="<?php echo constant('URL'); ?>public/ajax/mesasajax.js"></script>
+    <script src="<?php echo constant('URL'); ?>public/ajax/mesasdisponiblesajax.js"></script>
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/33cbed8d12.js" crossorigin="anonymous"></script>
