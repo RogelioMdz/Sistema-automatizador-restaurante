@@ -4,6 +4,7 @@
  */
 define('URL', 'http://localhost:8888/Sistema-automatizador-restaurante/');
 define('DASH', 'http://localhost:8888/Sistema-automatizador-restaurante/dashboard');
+define('MESAS', 'http://localhost:8888/Sistema-automatizador-restaurante/mesasdisponibles');
 /**
  *  declaro las constantes para posterioremente conectarme a la base de datos en el archivo database.php
  */

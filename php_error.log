@@ -1,1 +1,5 @@
-[16-Nov-2021 03:56:56 UTC] FATAL::server->La base de datos presenta una falla
+[17-Nov-2021 02:45:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Dashboard::mesas() in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/libs/app.php:41
+Stack trace:
+#0 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/index.php(20): App->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/libs/app.php on line 41

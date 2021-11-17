@@ -71,19 +71,25 @@
 /* ------------------------------------------------------------------------------ */
 
 /* ! Desde aqui comienza estilos de la hoja de trabajo header.php */
-/* * Fondo y largo de navbar */
-.navbar {
-    background: rgb(42, 55, 70) !important;
-    /* height: 100px; */
+/* * navbar */
+.navbar{
+    background: transparent !important;
 }
 
-/* * Nombre del usuario logeado */
-.navbar .optlog {
-    color: white !important;
-    margin-top: 12px;
-    text-decoration: none;
+/* * Narvbar Brand */
+.navbar-brand{
+    font-family: 'Oswald', cursive;
+    font-size: 1.5em;
+    letter-spacing: 1px;
 }
 
+/* *Espacio entre los items de la barra */
+.navbar-nav .nav-item{
+    margin-right: 0.7em;
+}
+
+
+/* * Este estilo es del circuco de activo a un lado del nombre */
 .navbar .optlog .circulo {
     width: 0.5em;
     height: 0.5em;
@@ -93,66 +99,7 @@
     margin: auto;
 }
 
-.navbar .dropdown-menu {
-    left: 3em;
-}
 
-/* Cambio de letra al navbar */
-.navbar .navbar-brand,
-.navbar .navbar-nav {
-    font-family: "Garamond", serif;
-    font-weight: lighter;
-
-}
-
-/* Posicion de titulo */
-.navbar .navbar-brand {
-    margin: 5px 70px;
-}
-
-/* Al momento de pasar el puntero sobre el titulo se mantiene de color blanco */
-.navbar .navbar-brand:hover {
-    color: white;
-}
-
-/* fondo del collapse */
-
-/* Separacion de los items */
-.navbar .navbar-nav .nav-item {
-    padding: 10px;
-}
-
-/* Se dibuja underline en los links del navbar */
-.navbar .navbar-nav .nav-item .nav-link {
-    position: relative;
-    text-decoration: none;
-    padding: 0 10px;
-    color: black;
-}
-
-.navbar .navbar-nav .nav-item .nav-link:after {
-    content: "";
-    position: absolute;
-    background-color: rgb(71, 189, 184);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.4s;
-}
-
-.navbar .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(71, 189, 184);
-}
-
-.navbar .navbar-nav .nav-item .nav-link:hover:after {
-    width: 100%;
-}
-
-/* ! marquee */
-.navbar .marquesina {
-    color: white;
-}
 
 /* -------------------------------------------------------------------------- */
 /* ! footer */
