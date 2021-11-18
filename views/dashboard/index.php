@@ -19,10 +19,6 @@
 
 <body>
     <?php require 'views/header.php'?>
-    <?php if ($_SESSION['rol_id'] == 3):?>
-    <marquee behavior="" direction="left">Que tenga excelente dia!, recuerda tratrar con respeto a los clientes
-    </marquee>
-    <?php endif;?>
     <div class="container">
         <div class="row ">
             <div class="card mb-3 mx-auto bg-light text-dark border-primary card-principal" style="max-width: 740px;">

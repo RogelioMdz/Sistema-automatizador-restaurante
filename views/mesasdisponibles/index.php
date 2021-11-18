@@ -120,6 +120,7 @@
                 </div>
                 <div class="modal-body">
                     <form id="formModalMesas" method="POST" class="formModalMesas">
+                        <input type="hidden" value="<?php echo $_SESSION['sesion'];?>" name="employee_id">
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Numero de Mesa</label>
                             <input type="text" class="form-control" name="tbl_id" id="tbl_id" readonly>

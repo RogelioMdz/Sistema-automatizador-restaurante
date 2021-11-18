@@ -69,10 +69,10 @@ INSERT INTO `tbl_rol` (`rol_id`, `rol_name`) VALUES
 
 INSERT INTO `tbl_employeestatus` (`status_id`, `status_name`) VALUES (NULL, 'Activo'), (NULL, 'Inactivo'), (NULL, 'Bloqueado');
 
-INSERT INTO `tbl_employee` (`employee_id`, `employee_key`, `employee_name`, `employee_surname`, `employee_phone`, `employee_age`, `employee_gender`, `employee_job`, `rol_id`) VALUES 
-(NULL, '1', 'Rogelio', 'Navarrete', '5614341249', '21', 'Masculino', 'Administrador', '1'),
-(NULL, '1', 'Monserrat', 'Aguilar', '5535499776', '25', 'Femenino', 'Gerente', '2'),
-(NULL, '1', 'Saori', 'Figueroa', '5645123654', '18', 'Femenino', 'Mesero', '3');
+INSERT INTO `tbl_employee`(`employee_id`, `employee_key`, `employee_name`, `employee_surname`, `employee_phone`, `employee_age`, `employee_gender`, `employee_job`, `status_id`, `rol_id`) 
+VALUES(NULL, '1', 'Rogelio', 'Navarrete', '5614341249', '21', 'Masculino', 'Administrador','1', '1'), 
+(NULL, '1', 'Monserrat', 'Aguilar', '5535499776', '25', 'Femenino', 'Gerente','1', '2'),
+(NULL, '1', 'Saori', 'Figueroa', '5645123654', '18', 'Femenino', 'Mesero','1', '3')
 
 INSERT INTO `tbl_estatus` (`est_id`, `est_name`) VALUES
 (1, 'Disponible'),

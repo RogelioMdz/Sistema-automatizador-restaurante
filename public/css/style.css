@@ -75,12 +75,14 @@
 .navbar{
     background: transparent !important;
     padding: 1.5em;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 /* *Estilos de los items del navbar */
 .navbar .navbar-nav .nav-link{
-    color: black;    
+    color: black;
+    font-family: 'Oswald', cursive; 
+    font-size: 1.2em;  
 }
 /* *Estilo del scroll */
 .scrollActive{

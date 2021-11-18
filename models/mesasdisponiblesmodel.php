@@ -24,12 +24,15 @@ class MesasdisponiblesModel extends Model{
             return [];
         }
     }
-    public function searchTable($tbl_id){
+    public function searchTable($datos){
         $query = $this->db->connect()->prepare("SELECT tbl_id FROM tbl_restaurante WHERE tbl_id = :tbl_id");
         try {
-            $query->execute(['tbl_id'=> $tbl_id['tbl_id']]);
+            $query->execute(['tbl_id'=> $datos['tbl_id']]);
             $row = $query->fetch(PDO::FETCH_ASSOC);
             if ($row < 1) {
+                $query2 = $this->db->connect()->prepare("UPDATE tbl_employee SET status_id = 3 WHERE employee_id = :employee_id");
+                $query2->execute(['employee_id' => $datos['employee_id']]);
+                $row2 = $query2->rowCount();
                 return false;
             }else {
                 //print_r($row);

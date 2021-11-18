@@ -18,17 +18,22 @@ class Main extends Controller{
 
         if ($this->model->existTable()) {
             if ($this->model->existEmployee(['employee_id'=> $employee_id])) {
-                if ($this->model->keyEmployee(['employee_id' => $employee_id])) {
-                    session_start();
-                    $_SESSION['sesion'] = $employee_id;
-                    $_SESSION['name_user'] = $this->model->getName(['employee_id' => $employee_id]);
-                    $_SESSION['surname_user'] = $this->model->getSurname(['employee_id' => $employee_id]);
-                    $_SESSION['rol_id'] = $this->model->getRol(['employee_id' => $employee_id]);
-                    //echo $_SESSION['name_user'];
-                    echo "0";
+                if ($this->model->activeEmployee(['employee_id' => $employee_id])) {
+                    if ($this->model->keyEmployee(['employee_id' => $employee_id])) {
+                        session_start();
+                        $_SESSION['sesion'] = $employee_id;
+                        $_SESSION['name_user'] = $this->model->getName(['employee_id' => $employee_id]);
+                        $_SESSION['surname_user'] = $this->model->getSurname(['employee_id' => $employee_id]);
+                        $_SESSION['rol_id'] = $this->model->getRol(['employee_id' => $employee_id]);
+                        //echo $_SESSION['name_user'];
+                        echo "0";
+                    }else {
+                        echo "3";
+                        error_log('ACCESSDENIELD::employee-> La contraseña es incorrecta del empleado' . " " . $employee_id);
+                    }
                 }else {
-                    echo "3";
-                    error_log('ACCESSDENIELD::employee-> La contraseña es incorrecta del empleado' . " " . $employee_id);
+                    echo "4";
+                    error_log('ACCESSDENIELD::employee-> El usuario se encuentra bloqueado, por actulizar datos dentro de la pagina');
                 }
             }else{
                 echo "2";
