@@ -36,7 +36,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Menu</a>
+              aria-expanded="false">Pedidos</a>
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
               <li><a class="dropdown-item" href="#">Tomar Orden</a></li>
               <li><a class="dropdown-item" href="#">Ordenes Activas</a></li>

@@ -23,23 +23,6 @@
 <body>
     <?php require 'views/header.php'?>
     <div class="container"  id="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="imgOpciones">
-                <a href="<?php echo constant('URL'); ?>dashboard"><img class="MesaImgInicio"
-                        src="<?php echo constant('URL'); ?>public/img/home.png" class="card-img-top" alt="home"></a>
-            </div>
-            <div class="imgOpciones">
-                <a href="<?php echo constant('URL'); ?>dashboard/nuevaorden"><img class="MesaImgPedidoLinea"
-                        src="<?php echo constant('URL'); ?>public/img/pedido.png" class="card-img-top"
-                        alt="pedido en linea"></a>
-            </div>
-            <div class="imgOpciones">
-                <a href="<?php echo constant('URL'); ?>dashboard/pedidoenlinea"><img class="MesaImgPedido"
-                        src="<?php echo constant('URL'); ?>public/img/pedido_linea.png" class="card-img-top" alt="orden"></a>
-            </div>
-        </div>
-    </div>
-    <div class="container"  id="container">
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="coloresMesa">
                 <div class="mesaDisponible">
@@ -64,14 +47,14 @@
         </div>
     </div>
     <div class="container">
-        <table class="table table-mesas table-secondary table-striped table-hover">
+        <table class="table table-striped table-hover table-mesas ">
             <thead>
-                <tr class="table-dark">
+                <tr class="table-primary cabecera">
                     <th scope="col">Numero de mesa</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Numero total de sillas</th>
                     <th scope="col">Estado actual</th>
-                    <th scope="col"></th>
+                    <th scope="col">Asignar</th>
                 </tr>
             </thead>
             <tbody>

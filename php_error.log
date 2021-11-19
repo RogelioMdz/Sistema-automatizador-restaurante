@@ -198,3 +198,29 @@ Stack trace:
 #0 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/index.php(20): App->__construct()
 #1 {main}
   thrown in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/libs/app.php on line 41
+[18-Nov-2021 01:01:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Dashboard::nuevaorden() in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/libs/app.php:41
+Stack trace:
+#0 /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/index.php(20): App->__construct()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/libs/app.php on line 41
+[19-Nov-2021 02:56:30 UTC] Error::construct-> Inicio de errores
+[19-Nov-2021 02:56:30 UTC] Error::construct-> Inicio de errores
+[19-Nov-2021 02:56:54 UTC] Error::construct-> Inicio de errores
+[19-Nov-2021 03:03:53 UTC] PHP Notice:  Undefined index: employee_i in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/controllers/Main.php on line 16
+[19-Nov-2021 03:03:53 UTC] FATAL::server->La base de datos presenta una falla
+[19-Nov-2021 03:06:01 UTC] PHP Notice:  Undefined index: employee_i in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/controllers/Main.php on line 16
+[19-Nov-2021 03:06:01 UTC] FATAL::server->La base de datos presenta una falla
+[19-Nov-2021 03:06:42 UTC] PHP Notice:  Undefined index: employee_i in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/controllers/Main.php on line 16
+[19-Nov-2021 03:06:42 UTC] FATAL::server->La base de datos presenta una falla
+[19-Nov-2021 03:09:08 UTC] FATAL::server->La base de datos presenta una falla
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: name_user in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/header.php on line 58
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: surname_user in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/header.php on line 58
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: rol_id in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/header.php on line 61
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: name_user in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/header.php on line 93
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: surname_user in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/header.php on line 93
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: rol_id in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/header.php on line 100
+[19-Nov-2021 03:09:24 UTC] PHP Notice:  Undefined index: sesion in /Applications/MAMP/htdocs/Sistema-automatizador-restaurante/views/mesasdisponibles/index.php on line 106
+[19-Nov-2021 03:09:32 UTC] Error::construct-> Inicio de errores
+[19-Nov-2021 03:09:45 UTC] FATAL::server->La base de datos presenta una falla
+[19-Nov-2021 03:11:52 UTC] FATAL::server->La base de datos presenta una falla
+[19-Nov-2021 03:12:21 UTC] FATAL::server->La base de datos presenta una falla

@@ -22,7 +22,8 @@ $(document).ready(function () {
                 beforeSend: function (){
                     $("#wrap").hide();
                     $("#formLogin").hide();
-                    $("#box").html("Procesando, espere por favor... <img src='public/img/loader3G.gif'>");
+                    $("#box").hide();
+                    $("#loader").html("<img src='public/img/loader3G.gif'>");
                         },
                         success: function (data) {
                             // console.log(data);
