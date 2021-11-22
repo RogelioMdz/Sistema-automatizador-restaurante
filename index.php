@@ -6,7 +6,7 @@ ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in 
 
 ini_set('log_errors', TRUE);
 ini_set("error_log", "/Applications/MAMP/htdocs/Sistema-automatizador-restaurante/php_error.log");
-//ini_set("error_log", "/xampp/htdocs/Proyecto/php_error.log");
+ini_set("error_log", "/xampp/htdocs/Sistema-automatizador-restaurante/php_error.log");
 /**
  *  Se solicita el codigo de las librerias 
  */

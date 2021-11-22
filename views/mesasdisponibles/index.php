@@ -111,12 +111,12 @@
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Numero de Sillas</label>
-                            <input type="text" class="form-control tbl_chair" id="tbl_chair" readonly>
+                            <input type="text" class="form-control tbl_chair" name="tbl_chair" id="tbl_chair" readonly>
                             <span class="form-line"></span>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Estado actual</label>
-                            <input type="text" class="form-control est_ac"  id="est_ac" readonly>
+                            <input type="text" class="form-control est_ac" name="est_ac"  id="est_ac" readonly>
                             <span class="form-line"></span>
                         </div>
                         <div class="mb-3">
