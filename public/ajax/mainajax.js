@@ -22,7 +22,8 @@ $(document).ready(function () {
                 beforeSend: function (){
                     $("#wrap").hide();
                     $("#formLogin").hide();
-                    $("#box").html("Procesando, espere por favor... <img src='public/img/loader3G.gif'>");
+                    $("#box").hide();
+                    $("#loader").html("<img src='public/img/loader3G.gif'>");
                         },
                         success: function (data) {
                             // console.log(data);
@@ -59,6 +60,17 @@ $(document).ready(function () {
                                         icon: "info",
                                         title: "Ups!",
                                         text: "Tu contraseña es incorrecta, intantelo nuevamente",
+                                        confirmButtonText: 'Continuar',
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            window.location.href = "index.php?url=main";
+                                        }
+                                    });
+                                }else if (validar [0] == 4 ) {
+                                    Swal.fire({
+                                        icon: "error",
+                                        title: "Error",
+                                        text: "Tu usuario se encuentra bloqueado, comunicaselo a tu supervisor",
                                         confirmButtonText: 'Continuar',
                                     }).then((result) => {
                                         if (result.isConfirmed) {

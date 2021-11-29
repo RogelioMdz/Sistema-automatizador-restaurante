@@ -16,6 +16,19 @@ class MainModel extends Model{
             return false;
         }
     }
+    public function activeEmployee($datos){
+        $query = $this->db->connect()->prepare("SELECT tbl_employeeStatus.status_id FROM tbl_employee INNER JOIN tbl_employeeStatus ON tbl_employee.status_id = tbl_employeeStatus.status_id WHERE employee_id = :employee_id");
+        try {
+            $query->execute(['employee_id' => $datos['employee_id']]);
+            if($row = $query->fetchColumn() == 1) {
+                return true;
+            }else {
+                return false;
+            }
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
     public function existEmployee($datos){
         $query = $this->db->connect()->prepare("SELECT tbl_rol.rol_id FROM  tbl_employee INNER JOIN tbl_rol ON tbl_employee.rol_id = tbl_rol.rol_id  WHERE employee_id = :employee_id");
         try {

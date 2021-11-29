@@ -9,12 +9,5 @@ class Mesas{
 
 }
 
-class ImgSql {
-
-    public $menuc_id;
-    public $menuc_name;
-    public $menuc_img;
-    
-}
 
 ?>

@@ -23,23 +23,6 @@
 <body>
     <?php require 'views/header.php'?>
     <div class="container"  id="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="imgOpciones">
-                <a href="<?php echo constant('URL'); ?>dashboard"><img class="MesaImgInicio"
-                        src="<?php echo constant('URL'); ?>public/img/home.png" class="card-img-top" alt="home"></a>
-            </div>
-            <div class="imgOpciones">
-                <a href="<?php echo constant('URL'); ?>dashboard/nuevaorden"><img class="MesaImgPedidoLinea"
-                        src="<?php echo constant('URL'); ?>public/img/pedido.png" class="card-img-top"
-                        alt="pedido en linea"></a>
-            </div>
-            <div class="imgOpciones">
-                <a href="<?php echo constant('URL'); ?>dashboard/pedidoenlinea"><img class="MesaImgPedido"
-                        src="<?php echo constant('URL'); ?>public/img/pedido_linea.png" class="card-img-top" alt="orden"></a>
-            </div>
-        </div>
-    </div>
-    <div class="container"  id="container">
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="coloresMesa">
                 <div class="mesaDisponible">
@@ -64,14 +47,14 @@
         </div>
     </div>
     <div class="container">
-        <table class="table table-mesas table-secondary table-striped table-hover">
+        <table class="table table-striped table-hover table-mesas ">
             <thead>
-                <tr class="table-dark">
+                <tr class="table-primary cabecera">
                     <th scope="col">Numero de mesa</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Numero total de sillas</th>
                     <th scope="col">Estado actual</th>
-                    <th scope="col"></th>
+                    <th scope="col">Asignar</th>
                 </tr>
             </thead>
             <tbody>
@@ -120,6 +103,7 @@
                 </div>
                 <div class="modal-body">
                     <form id="formModalMesas" method="POST" class="formModalMesas">
+                        <input type="hidden" value="<?php echo $_SESSION['sesion'];?>" name="employee_id">
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Numero de Mesa</label>
                             <input type="text" class="form-control" name="tbl_id" id="tbl_id" readonly>
@@ -127,12 +111,12 @@
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Numero de Sillas</label>
-                            <input type="text" class="form-control tbl_chair" id="tbl_chair" readonly>
+                            <input type="text" class="form-control tbl_chair" name="tbl_chair" id="tbl_chair" readonly>
                             <span class="form-line"></span>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Estado actual</label>
-                            <input type="text" class="form-control est_ac"  id="est_ac" readonly>
+                            <input type="text" class="form-control est_ac" name="est_ac"  id="est_ac" readonly>
                             <span class="form-line"></span>
                         </div>
                         <div class="mb-3">
@@ -161,7 +145,7 @@
         <!-- jqueryValidate -->
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
 
-    <script src="<?php echo constant('URL'); ?>public/ajax/mesasajax.js"></script>
+    <script src="<?php echo constant('URL'); ?>public/ajax/mesasdisponiblesajax.js"></script>
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/33cbed8d12.js" crossorigin="anonymous"></script>

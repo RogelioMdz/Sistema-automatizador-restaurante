@@ -53,7 +53,7 @@ $(document).ready(function () {
         submitHandler: function (form) {
             var datos = $("#formModalMesas").serialize();
             $.ajax({
-                url: 'index.php?url=Dashboard/asignarMesa',
+                url: 'index.php?url=Mesasdisponibles/asignarMesa',
                 type: 'post',
                 data: datos,
                 beforeSend: function () {
@@ -66,7 +66,7 @@ $(document).ready(function () {
                     if (data != "") {
                         var validar = data.split("|");
                         if (validar[0] == 0) {
-                            window.location.href = "index.php?url=dashboard/mesas";
+                            window.location.href = "index.php?url=mesasdisponibles";
                         } else if (validar[0] == 1) {
                             Swal.fire({
                                 icon: "error",
@@ -75,7 +75,7 @@ $(document).ready(function () {
                                 confirmButtonText: 'Continuar',
                             }).then((result) => {
                                 if (result.isConfirmed) {
-                                    window.location.href = "index.php?url=dashboard/mesas";
+                                    window.location.href = "index.php?url=destroy";
                                 }
                             });
                         } else if (validar[0] == 2) {
@@ -86,7 +86,7 @@ $(document).ready(function () {
                                 confirmButtonText: 'Continuar',
                             }).then((result) => {
                                 if (result.isConfirmed) {
-                                    window.location.href = "index.php?url=main";
+                                    window.location.href = "index.php?url=mesasdisponibles";
                                 }
                             });
                         }
