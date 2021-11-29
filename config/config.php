@@ -7,6 +7,7 @@ define('DASH', 'http://localhost:8080/Sistema-automatizador-restaurante/dashboar
 define('MESAS', 'http://localhost:8080/Sistema-automatizador-restaurante/mesasdisponibles');
 define('HAMBURGUESAS', 'http://localhost:8080/Sistema-automatizador-restaurante/hamburguesas');
 define('NUEVAORDEN', 'http://localhost:8080/Sistema-automatizador-restaurante/nuevaorden');
+
 /**
  *  declaro las constantes para posterioremente conectarme a la base de datos en el archivo database.php
  */
