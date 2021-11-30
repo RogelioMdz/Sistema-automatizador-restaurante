@@ -34,16 +34,8 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo constant('MESAS'); ?>">Mesas Disponibles</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Pedidos</a>
-            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-              <li><a class="dropdown-item" href="<?php echo constant('NUEVAORDEN');?>">Tomar Orden</a></li>
-              <li><a class="dropdown-item" href="#">Ordenes Activas</a></li>
-            </ul>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pedidos en Linea</a>
+            <a class="nav-link" href="<?php echo constant('URL'); ?>pedidos">Pedidos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Reservaciones</a>

@@ -530,3 +530,8 @@ span.error {
     text-align: center;
     font-family: monospace;
 }
+
+/*  */
+.spaceFooter{
+    margin-bottom: 15em;
+}

@@ -1,7 +1,7 @@
 <?php
 
 class Mesasdisponibles extends Controller{
-    public function __construct(){
+    function __construct(){
         parent::__construct();
         $this->view->mesas = [];
     }
