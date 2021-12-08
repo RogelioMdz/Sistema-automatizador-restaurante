@@ -535,3 +535,9 @@ span.error {
 .spaceFooter{
     margin-bottom: 15em;
 }
+
+/* ! Nueva orden */
+.btnNuevaorden{
+    display: flex;
+    justify-content: space-evenly;
+}

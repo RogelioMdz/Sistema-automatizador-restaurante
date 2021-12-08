@@ -43,20 +43,13 @@ CREATE TABLE tbl_restaurante(
     FOREIGN KEY (est_id) REFERENCES tbl_estatus(est_id)
 );
 
-
-CREATE TABLE tbl_menu(
-    menu_id  INT AUTO_INCREMENT,
-    menu_name VARCHAR (20),
-    PRIMARY KEY (menu_id)
-);
-
 CREATE TABLE tbl_menuCompleto(
     menuc_id INT AUTO_INCREMENT,
     menuc_name VARCHAR (50),
+    menuc_preci VARCHAR(50),
     menuc_img MEDIUMBLOB,
-    menu_id INT,
-    PRIMARY KEY (menuc_id),
-    FOREIGN KEY (menu_id) REFERENCES tbl_menu (menu_id)
+    menuc_category VARCHAR(50),
+    PRIMARY KEY (menuc_id)
 );
 
 ALTER TABLE tbl_employee AUTO_INCREMENT = 201816439
@@ -98,3 +91,4 @@ INSERT INTO `tbl_menu` (`menu_id`, `menu_name`) VALUES
 (NULL, 'Refrescos'), 
 (NULL, 'Bar');
 
+INSERT INTO `tbl_menucompleto` (`menuc_id`, `menuc_name`, `menuc_preci`, `menuc_img`, `menuc_category`) VALUES (NULL, 'Big', '110', 'hBig.png', 'Hamburguesas'), (NULL, 'Doble', '80', 'hDoble.png', 'Hamburguesas'), (NULL, 'Especial', '120', 'hEspecial.png', 'Hamburguesas'), (NULL, 'Mexicana', '85', 'hMexicana.png', 'Hamburguesas'), (NULL, 'Pollo', '80', 'hPollo.png', 'Hamburguesas'), (NULL, 'Sencilla', '65', 'hSencilla.png', 'Hamburguesas'), (NULL, 'Tocino', '95', 'hTocino.png', 'Hamburguesas');

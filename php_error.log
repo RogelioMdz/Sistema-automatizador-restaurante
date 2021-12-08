@@ -1,2 +1,11 @@
 [22-Nov-2021 19:51:00 Europe/Berlin] ACCESSDENIELD::employee-> La contraseña es incorrecta del empleado 3
 [22-Nov-2021 19:51:06 Europe/Berlin] FATAL::server->La base de datos presenta una falla
+[08-Dec-2021 18:45:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\Sistema-automatizador-restaurante\models\mainmodel.php:9
+Stack trace:
+#0 C:\xampp\htdocs\Sistema-automatizador-restaurante\controllers\main.php(19): MainModel->existTable()
+#1 C:\xampp\htdocs\Sistema-automatizador-restaurante\libs\app.php(41): Main->accessEmployee()
+#2 C:\xampp\htdocs\Sistema-automatizador-restaurante\index.php(20): App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\Sistema-automatizador-restaurante\models\mainmodel.php on line 9
+[08-Dec-2021 18:50:08 Europe/Berlin] Error::construct-> Inicio de errores
+[08-Dec-2021 18:50:12 Europe/Berlin] Error::construct-> Inicio de errores

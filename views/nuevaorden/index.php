@@ -16,6 +16,13 @@ if (isset($_SESSION['sesion'])) {
 </head>
 <body>
     <?php require 'views/header.php'?>
+    <div class="container ">
+        <div class="btnNuevaorden">
+            <button class="btn btn-info">Vista Previa</button>
+            <button class="btn btn-success">Confirmar</button>
+        </div>
+        <hr>
+    </div>
     <?php require 'views/footer.php'?>
 </body>
 </html>
