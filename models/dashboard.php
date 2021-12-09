@@ -9,5 +9,12 @@ class Mesas{
 
 }
 
+class Productos{
+    public $menuc_id;
+    public $menuc_name;
+    public $menuc_price;
+    public $menuc_img;
+    public $menuc_category;
+}
 
 ?>

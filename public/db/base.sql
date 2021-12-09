@@ -51,6 +51,15 @@ CREATE TABLE tbl_menuCompleto(
     menuc_category VARCHAR(50),
     PRIMARY KEY (menuc_id)
 );
+CREATE TABLE tbl_ordenes(
+    ord_id INT AUTO_INCREMENT,
+    ord_general VARCHAR (255),
+    ord_price VARCHAR (255),
+    ord_status VARCHAR (20),
+    employee_id INT,
+    PRIMARY KEY (ord_id),
+    FOREIGN KEY (employee_id) REFERENCES tbl_employee(employee_id)
+);
 
 ALTER TABLE tbl_employee AUTO_INCREMENT = 201816439
 

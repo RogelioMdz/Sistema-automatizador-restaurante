@@ -541,3 +541,6 @@ span.error {
     display: flex;
     justify-content: space-evenly;
 }
+.oculto{
+    display: none;
+}
