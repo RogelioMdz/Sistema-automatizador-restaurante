@@ -6,7 +6,7 @@ session_unset();
 
 session_destroy();
 
-define('URL', 'http://localhost:8080/Sistema-automatizador-restaurante/');
+define('URL', 'http://localhost:8080/Recuerdos/');
 header('Location:'. constant('URL'));
 
 ?>
